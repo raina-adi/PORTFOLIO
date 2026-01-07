@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --primary-bg: #0a0a0a;
     --secondary-bg: #1a1a1a;
@@ -6,6 +7,21 @@
     --accent: #64ffda;
     --accent-color: #64ffda;
     --accent-glow: rgba(100, 255, 218, 0.3);
+=======
+/* Modern Moon-Inspired Portfolio CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CSS Variables for Moon Theme */
+:root {
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #111111;
+    --accent-bg: #1a1a1a;
+    --moon-glow: #f0f8ff;
+    --primary-text: #ffffff;
+    --secondary-text: #b0b0b0;
+    --accent-color: #64ffda;
+    --accent-glow: #64ffda40;
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -15,6 +31,7 @@
     --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
     --border-radius: 16px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+<<<<<<< HEAD
     --moon-silver: #e8e8e8;
     --moon-pearl: #f5f5f5;
     --moon-ash: #c0c0c0;
@@ -109,6 +126,18 @@
 
 .skill-category h3 {
     font-size: 1.8rem;
+=======
+    
+    /* Moon Theme Colors */
+    --moon-yellow: #ffd700;
+    --moon-orange: #ff8c00;
+    --moon-pink: #ff69b4;
+    --moon-purple: #9370db;
+    --moon-blue: #4169e1;
+    --moon-cyan: #00ced1;
+    --moon-green: #32cd32;
+    --moon-red: #ff4500;
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 }
 
 /* Reset and Base Styles */
@@ -124,12 +153,19 @@ html {
 }
 
 body {
+<<<<<<< HEAD
     background: radial-gradient(ellipse at 60% 20%, #232946 0%, var(--primary-bg) 80%);
     color: var(--primary-text);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     margin: 0;
     padding: 0;
+=======
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--primary-text);
+    background: var(--primary-bg);
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
     overflow-x: hidden;
     position: relative;
 }
@@ -137,6 +173,7 @@ body {
 /* Moon Background */
 body::before {
     content: '';
+<<<<<<< HEAD
     position: absolute;
     top: 40px;
     right: 60px;
@@ -182,6 +219,50 @@ body::after {
 .star4 { top: 60vh; left: 80vw; width: 2.5px; height: 2.5px; animation-delay: 1.5s; }
 .star5 { top: 10vh; left: 90vw; width: 2px; height: 2px; animation-delay: 0.8s; }
 
+=======
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, 
+        var(--moon-yellow) 0%, 
+        var(--moon-orange) 25%, 
+        var(--moon-pink) 50%, 
+        var(--moon-purple) 75%,
+        transparent 100%);
+    border-radius: 50%;
+    box-shadow: 
+        0 0 60px var(--moon-yellow),
+        0 0 120px var(--moon-orange),
+        0 0 180px var(--moon-pink),
+        0 0 240px var(--moon-purple),
+        0 0 300px rgba(255, 215, 0, 0.4);
+    z-index: -1;
+    animation: moonGlow 4s ease-in-out infinite alternate;
+}
+
+/* Moon Glow Animation */
+@keyframes moonGlow {
+    0% {
+        box-shadow: 
+            0 0 50px var(--moon-yellow),
+            0 0 100px var(--moon-orange),
+            0 0 150px var(--moon-pink),
+            0 0 200px rgba(255, 215, 0, 0.3);
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 
+            0 0 80px var(--moon-yellow),
+            0 0 150px var(--moon-orange),
+            0 0 200px var(--moon-pink),
+            0 0 250px rgba(255, 215, 0, 0.5);
+        transform: scale(1.1);
+    }
+}
+
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 /* Animated Background */
 body::after {
     content: '';
@@ -218,6 +299,7 @@ body::after {
     width: 100%;
     background: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(20px);
+<<<<<<< HEAD
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--accent);
@@ -266,6 +348,8 @@ body::after {
 }
 
 .skill-item i {
+=======
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
     border-bottom: 1px solid var(--glass-border);
     z-index: 1000;
     transition: var(--transition);
@@ -598,7 +682,10 @@ body::after {
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 }
 
 .scroll-arrow {
@@ -653,10 +740,13 @@ body::after {
     width: 100%;
     height: 100%;
     background: var(--primary-bg);
+<<<<<<< HEAD
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: var(--accent);
     filter: drop-shadow(0 0 10px var(--accent-glow));
+=======
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
     border-radius: 50%;
     clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
     animation: crescentPhase 8s ease-in-out infinite;
@@ -678,7 +768,10 @@ body::after {
 section {
     padding: 100px 0;
     position: relative;
+<<<<<<< HEAD
     scroll-margin-top: 80px;
+=======
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 }
 
 .section-title {
@@ -1599,6 +1692,7 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-color);
+<<<<<<< HEAD
 } 
 
 .moon {
@@ -1640,4 +1734,6 @@ section {
 h1, h2, h3, h4, h5, h6, .highlight, .btn, .nav-link {
     color: var(--accent);
     text-shadow: 0 0 16px var(--moon-glow), 0 0 2px #fff;
+=======
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 } 

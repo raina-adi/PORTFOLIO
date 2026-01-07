@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modern Portfolio Website
 
 A beautiful, responsive portfolio website built with HTML5, CSS3, and JavaScript. Features modern design, smooth animations, and mobile-first responsive layout.
@@ -206,3 +207,6 @@ This project is open source and available under the [MIT License](LICENSE).
 **Happy coding! 🚀**
 
 Feel free to customize this portfolio to showcase your unique skills and personality. Remember to keep it updated with your latest projects and achievements! 
+=======
+# My Portfolio
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac

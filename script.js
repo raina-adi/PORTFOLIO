@@ -14,8 +14,11 @@ function initializePortfolio() {
     setupHoverEffects();
     setupScrollToTop();
     setupLoadingAnimation();
+<<<<<<< HEAD
     setupSmoothScrolling();
     setupNavbarEffects();
+=======
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 }
 
 // Mobile Navigation Toggle
@@ -479,6 +482,13 @@ const debouncedScrollHandler = debounce(() => {
 
 window.addEventListener('scroll', debouncedScrollHandler);
 
+<<<<<<< HEAD
+=======
+// Initialize all functions
+setupSmoothScrolling();
+setupNavbarEffects();
+
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
 // Fallback smooth scrolling for older browsers
 if (!('scrollBehavior' in document.documentElement.style)) {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -493,6 +503,7 @@ if (!('scrollBehavior' in document.documentElement.style)) {
             }
         });
     });
+<<<<<<< HEAD
 }
 
 // Generate and animate stars for the night sky
@@ -518,3 +529,6 @@ function createStars(numStars = 120) {
     }
 }
 window.addEventListener('DOMContentLoaded', () => createStars(120)); 
+=======
+} 
+>>>>>>> d05af0515e28988bfd2c5c16bf178971dda6e9ac
